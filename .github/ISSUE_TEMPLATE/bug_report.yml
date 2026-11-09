@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a reproducible problem with the extension or its documentation.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not paste tokens, cookies, AppSecrets, full console responses, audit IDs, or account names.
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      placeholder: "1.0.2"
+    validations:
+      required: true
+  - type: input
+    id: chrome
+    attributes:
+      label: Chrome version
+      placeholder: "116+"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use sanitized names and placeholders.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and error code
+      description: Include the error code (for example SCHEMA_CHANGED), not the raw request URL.
+    validations:
+      required: true

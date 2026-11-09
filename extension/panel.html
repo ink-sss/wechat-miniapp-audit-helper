@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小程序提审助手</title><link rel="stylesheet" href="panel.css"></head>
+<body>
+<header class="topbar"><div class="brandmark" aria-hidden="true">↗</div><div><h1>小程序提审助手</h1><p>接口直提 · 串行执行</p></div><span class="version">1.0.2</span></header>
+<main>
+<section class="connection"><div class="connection-head"><span id="connectionDot" class="dot"></span><strong id="connectionTitle">连接公众平台</strong><button id="refreshBtn" class="text-button">刷新列表</button></div><p id="connectionNote">正在查找已登录的小程序页面…</p><div id="tabPickerWrap" hidden><label for="tabPicker">选择要连接的页面</label><select id="tabPicker"></select><button id="connectBtn" class="secondary">连接此页面</button></div></section>
+<div id="alert" class="alert" role="alert" hidden></div>
+<nav class="tabs" aria-label="面板内容"><button id="tasksTab" class="tab active" aria-selected="true">提审任务</button><button id="historyTab" class="tab" aria-selected="false">历史记录</button></nav>
+<div id="taskPane">
+<section class="form-section"><div class="section-label"><span>提交设置</span><span class="muted">对本批所选小程序生效</span></div><label for="version">开发版本号 <span class="required">*</span></label><input id="version" placeholder="例如 1.2.4" value="1.2.4" maxlength="64" autocomplete="off"><label for="description">版本说明 <span class="muted">空值默认“完善功能”</span></label><textarea id="description" rows="2" maxlength="200" placeholder="完善功能">完善功能</textarea><details id="advanced"><summary>更多设置</summary><label for="developer">开发者 <span class="muted">留空自动匹配唯一开发版</span></label><input id="developer" placeholder="例如 ci机器人1" maxlength="80"><label for="orderMode">订单中心路径</label><select id="orderMode"><option value="inherit">沿用各自已有路径，没有则留空</option><option value="empty">全部留空</option><option value="custom">统一指定路径</option></select><input id="orderPath" hidden placeholder="pages/order/list" maxlength="200"><p class="field-note">同版本已上线也可再次提审；正在审核中的项目跳过。保留已上传代码的插件版本。</p></details></section>
+<section class="list-section"><div class="section-label"><span>小程序 <span id="appCount" class="count">0</span></span><span id="selectedCount" class="muted">已选 0 个</span></div><div class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索小程序名称" aria-label="搜索小程序名称"></div><div class="list-tools"><button id="selectAll" class="text-button">全选当前结果</button><button id="clearSelection" class="text-button">清空选择</button><span id="resultCounts"></span></div><div id="jobBanner" class="job-banner" role="status" hidden></div><div id="appsList" class="apps-list"></div><div id="empty" class="empty"><div class="empty-icon">▤</div><h2>先连接一个小程序</h2><p>在当前窗口登录微信公众平台，进入小程序后台，列表将从账号切换接口自动读取。</p></div></section>
+<section id="batchActions" class="batch-actions" hidden><button id="newBatchBtn" class="secondary">新建批次</button><button id="resumeBtn" class="secondary" hidden>继续未处理项</button><button id="retryBtn" class="secondary" hidden>重新检查失败项</button><button id="exportBtn" class="secondary">导出本批结果</button><button id="openCurrentBtn" class="text-button">查看当前小程序后台 ↗</button></section>
+</div>
+<div id="historyPane" hidden><p class="history-note">最近 10 个批次，仅保存在本机。不保存 Cookie 或 token。</p><div id="historyList"></div></div>
+</main>
+<footer id="footer"><div class="footer-note" id="footerNote">每个小程序独立显示进度</div><div class="footer-buttons"><button id="previewBtn" class="secondary">仅预检查</button><button id="startBtn" class="primary" disabled>开始提审</button><button id="pauseBtn" class="primary pause" hidden>本项完成后暂停</button></div><p id="scopeNote">开始提审会真实提交至微信；不会发布上线。</p></footer>
+<script src="shared.js"></script><script src="panel.js"></script>
+</body></html>

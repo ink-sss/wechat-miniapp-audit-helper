@@ -1,0 +1,35 @@
+{
+  "code": {
+    "ret": 0,
+    "code_data": "{\"online_info\": {\"basic_info\": {\"open_id\": \"TARGET_DEVELOPER_1\", \"version\": \"1.2.4\", \"nick_name\": \"ci机器人1\", \"time\": 1790580428, \"describe\": \"1.2.4优化\"}}, \"experience_info\": {\"basic_info\": {\"open_id\": \"TARGET_DEVELOPER_1\", \"version\": \"1.2.4\", \"nick_name\": \"ci机器人1\", \"time\": 1790584239, \"describe\": \"1.2.4优化\", \"status\": 2, \"audit_status\": 1, \"audit_id\": 900000001}}, \"develop_info\": {\"info_list\": [{\"basic_info\": {\"open_id\": \"TARGET_DEVELOPER_1\", \"version\": \"1.2.4\", \"nick_name\": \"ci机器人1\", \"time\": 1790230906, \"describe\": \"1.2.4优化\", \"status\": 0}, \"is_exper\": true}, {\"basic_info\": {\"open_id\": \"TARGET_DEVELOPER_4\", \"version\": \"1.1.6\", \"nick_name\": \"ci机器人21\", \"time\": 1788085019, \"describe\": \"TARGET 1.1.6\", \"status\": 0}}, {\"basic_info\": {\"open_id\": \"TARGET_DEVELOPER_2\", \"version\": \"1.1.2\", \"nick_name\": \"ci机器人12\", \"time\": 1787814469, \"describe\": \"1.1.2-优化\", \"status\": 0}}, {\"basic_info\": {\"open_id\": \"TARGET_DEVELOPER_0\", \"version\": \"1.1.9\", \"nick_name\": \"ci机器人2\", \"time\": 1789028920, \"describe\": \"TARGET 1.1.9\", \"status\": 0}}, {\"basic_info\": {\"open_id\": \"TARGET_DEVELOPER_3\", \"version\": \"1.2.3\", \"nick_name\": \"TARGET_DEVELOPER_5\", \"time\": 1789781610, \"describe\": \"1.2.3\", \"status\": 0}}]}, \"need_finance_audit\": 0, \"qr_path\": \"pages/broadcast/entry?sc=TARGET_SCENE&lt=live\"}",
+    "can_submit_check": true
+  },
+  "form": {
+    "ret": 0,
+    "code_info": {
+      "open_id": "TARGET_DEVELOPER_1",
+      "version": "1.2.4",
+      "nick_name": "ci机器人1",
+      "time": 1790230906,
+      "describe": "1.2.4优化",
+      "warning_api_list": []
+    },
+    "need_add_test_account": 0,
+    "need_report": 0,
+    "has_trade": true,
+    "online_order_path": "pages/order/list",
+    "class_info": "{\"scan_info\": \"\", \"last_audit_info\": {\"item_list\": [{\"address\": \"pages/index/index\", \"first_class\": \"生活服务\", \"second_class\": \"百货/超市/便利店\", \"third_class\": \"\", \"title\": \"首页\", \"first_id\": 150, \"second_id\": 670, \"third_id\": 0}, {\"address\": \"pages/index/index\", \"first_class\": \"商家自营\", \"second_class\": \"玩具\", \"third_class\": \"\", \"title\": \"首页\", \"first_id\": 304, \"second_id\": 1305, \"third_id\": 0}], \"test_account_list\": [], \"qc_list\": []}, \"version_desc\": \"完善功能\", \"remark\": \"\", \"speedup_type\": \"\"}",
+    "public_key_info": "{\"auto_id\": 30}"
+  },
+  "profile": {
+    "ret": 0,
+    "setting_info": {
+      "original_appid": "wxTARGET",
+      "original_username": "gh_TARGET",
+      "nickname": {
+        "nickname": "TARGET"
+      }
+    }
+  },
+  "submitBody": "ticket=qrcheckTicket&openid=TARGET_DEVELOPER_1&auto_id=30&version_desc=%E5%AE%8C%E5%96%84%E5%8A%9F%E8%83%BD&speedup_audit=0&speedup_type=%E4%BF%AE%E5%A4%8D%E6%BC%8F%E6%B4%9E&speedup_desc=&encrypted_username=&encrypted_password=&remark=&order_path=pages%2Forder%2Flist&feedback_info=&feedback_status=1&only_run_wxwork=0&argue_item=&preview_info=%7B%22pic_id_list%22%3A%5B%5D%2C%22video_id_list%22%3A%5B%5D%7D&feedback_stuff="
+}
