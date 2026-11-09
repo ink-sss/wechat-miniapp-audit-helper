@@ -9,9 +9,11 @@
 
 ## Reporting a vulnerability
 
-Please use GitHub's private vulnerability reporting:
+Please use GitHub private vulnerability reporting if it is enabled for this repository:
 
 <https://github.com/ink-sss/wechat-miniapp-audit-helper/security/advisories/new>
+
+If that page is unavailable, open an issue asking for a private contact channel. Do not include secrets in the issue.
 
 Do not open a public issue containing tokens, cookies, AppSecrets, full console responses, audit IDs, QR scene values, or account names.
 
