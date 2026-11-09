@@ -1,7 +1,7 @@
 # 小程序提审助手
 
 [![Chrome MV3](https://img.shields.io/badge/Chrome-Manifest%20V3-4285F4?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
-[![Tests](https://img.shields.io/badge/tests-100%20passing-2f855a)](https://github.com/ink-sss/wechat-miniapp-audit-helper/actions)
+[![Tests](https://img.shields.io/badge/tests-100%20passing-2f855a)](#开发)
 [![License: MIT](https://img.shields.io/badge/license-MIT-2f855a)](LICENSE)
 
 一个 Chrome Manifest V3 侧边栏扩展，用微信公众平台网页端接口批量提交小程序审核。
